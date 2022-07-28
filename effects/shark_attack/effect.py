@@ -4,44 +4,28 @@
 
 #
 
-color_purple = (128,0,128)
-color_pink = (255,192,203)
-color_lightpink = (255,182,193)
-color_cadetblue = (95, 158, 160)
-color_black = (0, 0, 0)
-color_red = (255, 0, 0)
-color_pastelgreen = (193, 225, 193)
-color_white = (255, 255, 255)
-color_lightblue = (173, 216, 230)
-color_bluegrey = (115, 147, 179)
-color_grey = (211, 211, 211)
+# color_purple = (128,0,128)
+# color_pink = (255,192,203)
+# color_lightpink = (255,182,193)
+# color_cadetblue = (95, 158, 160)
+# color_black = (0, 0, 0)
+# color_red = (255, 0, 0)
+# color_pastelgreen = (193, 225, 193)
+# color_white = (255, 255, 255)
+# color_lightblue = (173, 216, 230)
+# color_bluegrey = (115, 147, 179)
+# color_grey = (211, 211, 211)
 
-# Use the same sprite for pacman but change the color coding to animate frame by frame
+
 # color key for sharks
-shark_color_key = [
-    {'a': color_cadetblue, 'b': color_lightblue, 'c': color_pastelgreen, 'd': color_bluegrey, 'e': color_grey, 'f': color_white, 'g': color_red, 'h': color_black}
-    # {'a': color_purple, 'b': color_yellow, 'c': color_black},
-    # {'a': color_purple, 'b': color_black, 'c': color_black},
-    # {'a': color_purple, 'b': color_yellow, 'c': color_black},
-]
-
-# Draw a pacman facing right
-# Make shark facing right
-# shark_right = [
-#     [' ', ' ', ' ', ' ', 'a', 'a', 'a', 'a', 'a', ' ', ' ', ' ', ' '],
-#     [' ', ' ', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', ' ', ' '],
-#     [' ', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', 'b', 'b', ' '],
-#     [' ', 'a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', 'b', 'b', 'b', ' '],
-#     ['a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', 'b', 'b', 'c', 'c', 'c'],
-#     ['a', 'a', 'a', 'a', 'a', 'b', 'b', 'c', 'c', 'c', 'c', 'c', 'c'],
-#     ['a', 'a', 'a', 'a', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c'],
-#     ['a', 'a', 'a', 'a', 'a', 'b', 'b', 'c', 'c', 'c', 'c', 'c', 'c'],
-#     ['a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', 'b', 'b', 'c', 'c', 'c'],
-#     [' ', 'a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', 'b', 'b', 'b', ' '],
-#     [' ', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', 'b', 'b', ' '],
-#     [' ', ' ', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'b', 'b', ' ', ' '],
-#     [' ', ' ', ' ', ' ', 'a', 'a', 'a', 'a', 'a', ' ', ' ', ' ', ' ']
+# shark_color_key = [
+#     {'a': color_cadetblue, 'b': color_lightblue, 'c': color_pastelgreen, 'd': color_bluegrey, 'e': color_grey, 'f': color_white, 'g': color_red, 'h': color_black}
+   
 # ]
+
+
+# Make shark facing right
+
 
 shark_right = [
     [' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','a','a','a',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '],
@@ -111,69 +95,54 @@ shark_right = [
     [' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','c','c','c','c',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' '],
 ]
 
-# Use the same sprite for the ghost but change the colors to animate movement
+
 # Make color key for fishes that shark wants to eat
-fish_color_key = [
-    {'a': color_purple, 'b': color_pink, 'c': color_lightpink, 'd': color_white, 'e': color_black},
-    # {'a': color_red, 'b': color_white, 'c': color_blue, 'd': color_black, 'e': color_red, 'f': color_black, 'g':color_blue, 'h': color_black},
-]
-
-# Draw an agressive ghost chasing pacman
-# not sure I need this, but would be good to have a shark aggressively chasing fish
-fish_agro = [
-    [' ',' ',' ',' ',' ','a','a','a',' ',' ',' ',' ',' ',' ',' ',' ',' '],
-
-    [' ',' ',' ',' ',' ',' ','a',' ','a',' ',' ',' ',' ',' ',' ',' ',' '],
-
-    [' ',' ',' ',' ',' ',' ','a',' ',' ','a',' ',' ',' ',' ',' ',' ',' '],
-
-    [' ',' ',' ',' ',' ',' ',' ','a',' ','b','a',' ',' ',' ',' ',' ',' '],
-    
-    [' ',' ',' ',' ',' ',' ','a','b','b','a','a','a',' ',' ',' ',' ',' '],
-
-    ['a','a','a',' ',' ',' ','a','a','a','b','b','b','a',' ',' ',' ',' '],
-
-    ['a','b','b','a','a','a','b','b','b','b','b','b','b','a','a','a',' '],
+# fish_color_key = [
+#     'a': color_purple, 'b': color_pink, 'c': color_lightpink, 'd': color_white, 'e': color_black
    
-    [' ','a','b','b','b','b','c','a','c','a','e','d','b','b','b','b','a'],
-
-    [' ','a','c','c','c','c','b','c','b','c','e','e','c','c','b','c','a'],
-    
-    ['a','c','c','a','a','a','c','c','c','c','c','c','c','a','a','a',' '],
-    
-    ['a','a','a','c','c','c','a','a','a','c','c','c','a',' ',' ',' ',' '],
-
-    [' ',' ',' ',' ',' ',' ',' ','a','b','a','a','a',' ',' ',' ',' ',' '],
-
-    [' ',' ',' ',' ',' ',' ',' ','a','b','b','a',' ',' ',' ',' ',' ',' '],
-
-    [' ',' ',' ',' ',' ',' ',' ','a','c','a',' ',' ',' ',' ',' ',' ',' '],
-
-    [' ',' ',' ',' ',' ',' ',' ',' ','a',' ',' ',' ',' ',' ',' ',' ',' '],
-
-
-]
-
-# fish_agro = [
-#     [' ', ' ', ' ', ' ', ' ', 'a', 'a', 'a', 'a', ' ', ' ', ' ', ' ', ' '],
-#     [' ', ' ', ' ', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', ' ', ' ', ' '],
-#     [' ', ' ', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', ' ', ' '],
-#     [' ', 'a', 'a', 'a', 'b', 'b', 'a', 'a', 'a', 'a', 'b', 'b', 'a', ' '],
-#     [' ', 'a', 'a', 'b', 'b', 'b', 'b', 'a', 'a', 'b', 'b', 'b', 'b', ' '],
-#     [' ', 'a', 'a', 'b', 'b', 'c', 'c', 'a', 'a', 'b', 'b', 'c', 'c', ' '],
-#     ['a', 'a', 'a', 'b', 'b', 'c', 'c', 'a', 'a', 'b', 'b', 'c', 'c', 'a'],
-#     ['a', 'a', 'a', 'a', 'b', 'b', 'a', 'a', 'a', 'a', 'b', 'b', 'a', 'a'],
-#     ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'],
-#     ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'],
-#     ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'],
-#     ['a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a', 'a'],
-#     ['a', 'a', 'e', 'a', 'f', 'a', 'e', 'e', 'a', 'f', 'a', 'e', 'a', 'a'],
-#     ['f', 'e', 'e', 'd', 'f', 'f', 'e', 'e', 'f', 'f', 'd', 'e', 'e', 'f']
 # ]
 
-# Draw a scared ghost running away from pacman
+
+# not sure I need this, but would be good to have a shark aggressively chasing fish
+# fish_agro = [
+#     [' ',' ',' ',' ',' ','a','a','a',' ',' ',' ',' ',' ',' ',' ',' ',' '],
+
+#     [' ',' ',' ',' ',' ',' ','a',' ','a',' ',' ',' ',' ',' ',' ',' ',' '],
+
+#     [' ',' ',' ',' ',' ',' ','a',' ',' ','a',' ',' ',' ',' ',' ',' ',' '],
+
+#     [' ',' ',' ',' ',' ',' ',' ','a',' ','b','a',' ',' ',' ',' ',' ',' '],
+    
+#     [' ',' ',' ',' ',' ',' ','a','b','b','a','a','a',' ',' ',' ',' ',' '],
+
+#     ['a','a','a',' ',' ',' ','a','a','a','b','b','b','a',' ',' ',' ',' '],
+
+#     ['a','b','b','a','a','a','b','b','b','b','b','b','b','a','a','a',' '],
+   
+#     [' ','a','b','b','b','b','c','a','c','a','e','d','b','b','b','b','a'],
+
+#     [' ','a','c','c','c','c','b','c','b','c','e','e','c','c','b','c','a'],
+    
+#     ['a','c','c','a','a','a','c','c','c','c','c','c','c','a','a','a',' '],
+    
+#     ['a','a','a','c','c','c','a','a','a','c','c','c','a',' ',' ',' ',' '],
+
+#     [' ',' ',' ',' ',' ',' ',' ','a','b','a','a','a',' ',' ',' ',' ',' '],
+
+#     [' ',' ',' ',' ',' ',' ',' ','a','b','b','a',' ',' ',' ',' ',' ',' '],
+
+#     [' ',' ',' ',' ',' ',' ',' ','a','c','a',' ',' ',' ',' ',' ',' ',' '],
+
+#     [' ',' ',' ',' ',' ',' ',' ',' ','a',' ',' ',' ',' ',' ',' ',' ',' '],
+
+
+# ]
+
+
+
+
 # definitely want scared fish
-fish_scared = [
+fish_right = [
     [' ',' ',' ',' ',' ','a','a','a',' ',' ',' ',' ',' ',' ',' ',' ',' '],
 
     [' ',' ',' ',' ',' ',' ','a',' ','a',' ',' ',' ',' ',' ',' ',' ',' '],
@@ -207,33 +176,113 @@ fish_scared = [
 
 ]
 
-# Reuse the right facing pacman, reverse the image to create left facing pacman
-# reuse the right facing shark, reverse the image to creat left facing shark
-shark_left = [line[::-1] for line in shark_right]
-
+fish_body = fish_right
+fish_width = len(fish_body)
+# Just get the fish going across the screen:
 def run(matrix, config):
     """ Sharks """
 
-    animate_frame = 0
-    x = -len(shark_right)
-    y = 8
-    shark_face = shark_right
-    shark_direction = 1
-    fish_body = fish_agro
+   
+    x = 0
+    y = 1
+    fish_body = fish_right
 
     while True:
         matrix.reset()
-        matrix.sprite(shark_face, (x, y), shark_color_key[animate_frame % len(shark_color_key)])
-        matrix.sprite(fish_body, (x - 2 - len(fish_agro), y), fish_color_key[animate_frame % len(fish_color_key)])
+        matrix.sprite(fish_body, (x - fish_width , y), {
+             'a': (128,0,128), #purple
+             'b': (255,192,203), #pink
+             'c': (255,182,193), #lightpink
+             'd': (255, 255, 255), #white
+             'e': (0, 0, 0)  #black
+              
+        } )
+       
+        
+      
         matrix.show()
-        animate_frame += 1
-        x += shark_direction
+        # x += shark_direction
+        # x += fish_direction
 
-        if shark_face == shark_right and x >= config['pixel_width']:
-            shark_direction = -1
-            shark_face = shark_left
-            fish_body = fish_scared
-        if shark_face == shark_left and x <= 0:
-            shark_direction = 1
-            shark_face = shark_right
-            fish_body = fish_agro
+        # if shark_face == shark_right and x >= config['pixel_width']:
+        #     shark_direction = -1
+        #     fish_direction = -1
+        #     shark_face = shark_left
+        #     fish_body = fish_right
+        # if shark_face == shark_left and x <= 0:
+        #     shark_direction = 1
+        #     fish_direction = 1
+        #     shark_face = shark_right
+        #     fish_body = fish_left
+
+
+
+# Reuse the right facing pacman, reverse the image to create left facing pacman
+# reuse the right facing shark, reverse the image to creat left facing shark
+# Need to reverse the fish as well
+# shark_left = [line[::-1] for line in shark_right]
+# fish_left = [line[::-1] for line in fish_right]
+
+
+
+# def run(matrix, config):
+#     """ Sharks """
+
+#     # animate_frame = 0
+#     x = -len(shark_right)
+#     y = 1
+#     shark_face = shark_right
+#     shark_direction = 1
+#     fish_direction = 1
+#     fish_body = fish_right
+
+#     while True:
+#         matrix.reset()
+#         matrix.sprite(fish_body, (x - 30 - len(shark_face) , y), {
+#              'a': (128,0,128), #purple
+#              'b': (255,192,203), #pink
+#              'c': (255,182,193), #lightpink
+#              'd': (255, 255, 255), #white
+#              'e': (0, 0, 0)  #black
+              
+#         }
+#         )
+
+#         matrix.sprite(shark_face, (x - 10 - len(fish_body), y), {
+#             'a': (95, 158, 160), #cadetblue
+#             'b': (173, 216, 230), #lightblue
+#             'c': (193, 225, 193), #pastelgreen
+#             'd': (115, 147, 179), #bluegrey
+#             'e': (211, 211, 211), # grey
+#             'f': (255, 255, 255), #white
+#             'g': (255, 0, 0), #red
+#             'h': (0, 0, 0) #black
+           
+            
+#         }
+#             )
+        
+#         # matrix.delay(200)
+
+#         # matrix.reset()
+#         # matrix.sprite(shark_face, (x, y), shark_color_key[animate_frame % len(shark_color_key)])
+#         # matrix.sprite(fish_body, (x - 2 - len(fish_right), y), fish_color_key[animate_frame % len(fish_color_key)])
+#         # matrix.delay(200)
+       
+        
+      
+#         matrix.show()
+#         # animate_frame += 1
+#         x += shark_direction
+#         x += fish_direction
+
+#         if shark_face == shark_right and x >= config['pixel_width']:
+#             shark_direction = -1
+#             fish_direction = -1
+#             shark_face = shark_left
+#             fish_body = fish_right
+#         if shark_face == shark_left and x <= 0:
+#             shark_direction = 1
+#             fish_direction = 1
+#             shark_face = shark_right
+#             fish_body = fish_left
